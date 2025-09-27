@@ -1,8 +1,4 @@
 # SnapStory
-a universe of stories from vision
-
-
-# SnapStory
 
 **A universe of stories from vision**
 
