@@ -1,98 +1,78 @@
-# SnapStory
+## AuraTale: The Vision-to-Narrative Synthesizer
+A New Dimension of Digital Storytelling
+AuraTale is an innovative, AI-driven web application that bridges the gap between sight and sound by automatically transforming your visual memories into rich, narrated stories. Upload your photos, select a theme, and watch as artificial intelligence weaves a seamless, personalized narrative complete with voice narration.
 
-**A universe of stories from vision**
+## Sequential Image-to-Text Synthesis
+The application accepts a sequence of 1 to 10 images (supporting PNG, JPG, and JPEG formats). It analyzes the visual data of each picture and crafts a cohesive narrative arc that links every image in the exact order you provide, ensuring a logical flow from beginning to end.
 
----
+## Thematic Story Customization
+Tailor the atmosphere and style of your story by choosing from a robust menu of story genres:
 
-SnapStory is an AI-powered application that transforms your images into engaging stories and narrates them for you! Upload up to 10 images, pick your favorite genre, and let the AI generate and narrate a unique story inspired by your visuals.
+Comedy
 
-## Features
+Mystery
 
-- **Image-to-Story Generation:**  
-  Upload 1 to 10 images (PNG, JPG, JPEG), and SnapStory will analyze them to create a coherent narrative connecting all images in the order provided.
+Thriller
 
-- **Genre Selection:**  
-  Choose from multiple storytelling styles, including:
-  - Comedy
-  - Thriller
-  - Fairy Tale
-  - Sci-Fi
-  - Mystery
-  - Adventure
-  - Morale
+Sci-Fi (Science Fiction)
 
-- **Indian Context:**  
-  All stories are written with Indian names, characters, places, and cultural context.
+Adventure
 
-- **Special Genre Sections:**  
-  Some genres include unique conclusions:
-    - **Morale:** A `[MORAL]:` section at the end of the story delivering the lesson.
-    - **Mystery:** A `[SOLUTION]:` section that reveals the culprit and the key clue.
-    - **Thriller:** A `[TWIST]:` section with a final, shocking twist.
+Fairy Tale
 
-- **AI Narration:**  
-  After generating the story, SnapStory uses AI-based text-to-speech to narrate the story in English. Listen to your story directly in the app.
+Morale (Inspirational)
 
-- **Interactive & Easy to Use:**  
-  - Simple Streamlit web interface.
-  - Real-time feedback and error handling for uploads and API issues.
+## Culturally Grounded Content
+All generated stories feature Indian names, cultural elements, characters, and settings, providing a relevant and immersive experience for users interested in South Asian context.
 
-## How It Works
+## Advanced Genre Conclusions
+Specific genres are enhanced with unique, formatted closing statements to maximize impact:
 
-1. **Upload Images:**  
-   Use the sidebar to upload between 1 and 10 images.
+Mystery: Concludes with a [SOLUTION]: paragraph that clearly identifies the culprit and the crucial evidence.
 
-2. **Choose a Style:**  
-   Select your desired story genre from the dropdown.
+Thriller: Ends with a sudden, dramatic [TWIST]: revelation designed to shock the reader.
 
-3. **Generate Story:**  
-   Click the "Generate Story and Narration" button. The AI will:
-   - Interpret each image for key details.
-   - Create a single, connected story with a beginning, middle, and end.
-   - Write the story in simple, modern English.
-   - For special genres, add a unique section (moral, solution, or twist).
+Morale: Provides a final [LESSON]: section to explicitly state the moral learned from the tale.
 
-4. **View and Listen:**  
-   - See your images and the generated story on the main page.
-   - Listen to the AI narration of your story.
+## Automated Narration
+Once the text is generated, AuraTale employs AI-based Text-to-Speech (TTS) technology to deliver a clear English narration. Users can listen to their story directly within the interface.
 
-## Example Use Cases
+## Technical Overview & Setup
+-User Workflow
+Input: Drag and drop your images into the designated sidebar upload area.
 
-- Make bedtime stories from your family photos.
-- Turn your vacation pictures into a fun adventure tale.
-- Generate creative stories for children’s activities.
-- Use as a storytelling tool in classrooms.
+Selection: Choose your preferred narrative theme from the dropdown menu.
 
-## Requirements
+Synthesis: Click the primary action button to trigger the AI generation pipeline.
 
-- Python 3.7+
-- Streamlit
-- Pillow
-- google-generativeai
-- gTTS
-- python-dotenv
+Output: Instantly receive the written text, see your images, and play the embedded audio narration.
 
-## How to Run
+-Prerequisites to Run Locally
+AuraTale is built on Python and uses a simple Streamlit front-end.
 
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+Python Version: 3.7 or newer.
 
-2. Set your `GOOGLE_API_KEY` in a `.env` file.
+Dependencies: All required packages are listed in requirements.txt.
 
-3. Run the app:
-   ```bash
-   streamlit run app.py
-   ```
+-Deployment Steps
+1. Install Libraries: Use the command line to fetch all required libraries.
 
-## Credits
+Bash
 
-Developed by [imswatisinha](https://github.com/imswatisinha).
+pip install -r requirements.txt
+API Key Configuration: Secure your GOOGLE_API_KEY by placing it in a .env file at the project root.
 
----
+2. Launch Application: Run the Streamlit server to open the app in your browser.
 
-## Link
-https://swati-snapstory.streamlit.app/
+Bash
 
-Enjoy creating stories from your images with SnapStory!
+streamlit run app.py
+
+## Potential Applications
+Creative Writing: Use photos from events or outings to automatically draft a narrative draft.
+
+Education: A fun and engaging tool for teachers to spark children's imagination.
+
+Personal Keepsakes: Transform simple vacation photos or family albums into memorable, narrated "audio books."
+
+Developed by namrausman.
