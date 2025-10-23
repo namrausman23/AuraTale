@@ -1,0 +1,8 @@
+# Python Environment Files
+venv/
+.env
+__pycache__/
+*.pyc
+
+# OS/IDE junk
+.DS_Store
